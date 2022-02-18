@@ -1,31 +1,85 @@
-<!dostype html>
-<HTML>
-<BODY>
-
-  <h1>Онлайн-тест по теме: ...</h1>
-<p>На сегодняшний день, онлайн тестирование является одним из лучших способов проверки знаний. 
-  Основной принцип тестирования заключается в использовании стандартизованных задач и вопросов, 
-  которые имеют определённую шкалу значимости.
-
-  <h2>Преимущества</h2>
-<pre>
-<p>
-1)проведение удалённого тестирования  
- (возможность проведения процедуры тестирования в режиме реального времени в любой точке, где есть доступ к Интернету);
-2)мгновенная обработка результатов и получение полной отчётности;
-3)доступ к результатам лишь уполномоченных лиц (вход в систему тестирования осуществляется на основании установленных паролей);
-4)сохранение отчётов тестирования в виде файловых данных;
-5)тестирование может происходить в любое время и в любом порядке;
-6)возможность охвата нескольких тем определённого вопроса.</p>
-</pre>
-  <h2>Недостатки</h2>
-
-<p>При всех положительных моментах такой методики обработки информации 
-  существует один явный её недостаток – это достаточно трудоёмкое 
-  составление самих анкет и тестов. Однако и здесь созданы программы, 
-  в которых данные функции выполняет компьютеризированная система..</p> 
-
-  
-
-</BODY>
-</HTML>
+<html>
+<head><title>Online Test</title>
+<style>
+p {
+	font-size:24px;
+}
+input {
+	font-size:24px;
+}
+</style>
+</head>
+<body style="background-color:#008000;">
+<p>Решите и введите свой ответ:</p>
+<p>1+1 = <input type="text" id="t1"></p>
+<p>2+2 = <input type="text" id="t2"></p>
+<p>3+3 =  <input type="text" id="t3"></p>
+<p>4+4 = <input type="text" id="t4"></p>
+<p>5+5 = <input type="text" id="t5"></p>
+<p>6+6 = <input type="text" id="t6"></p>
+<p>7+7 = <input type="text" id="t7"></p>
+<p>8+8 = <input type="text" id="t8"></p>
+<p>9+9 = <input type="text" id="t9"></p>
+<p>Если боковые рёбра призмы перпендикулярны основаниям, то призма называется ... = <input type="text" id="t10"></p>
+<button onClick="check();">Проверить ответы</button>
+<div id="result"></div>
+<script>
+function check(){
+correct_answer_1 = 2; 
+correct_answer_2 = 4;
+correct_answer_3 = 6;
+correct_answer_4 = 8;
+correct_answer_5 = 10; 
+correct_answer_6 = 12; 
+correct_answer_7 = 14; 
+correct_answer_8 = 16; 
+correct_answer_9 = 18; 
+correct_answer_10 = прямой; 
+your_answer_1 = document.getElementById('t1').value;
+your_answer_2 = document.getElementById('t2').value;
+your_answer_3 = document.getElementById('t3').value;
+your_answer_4 = document.getElementById('t4').value;
+your_answer_5 = document.getElementById('t5').value;
+your_answer_6 = document.getElementById('t6').value;
+your_answer_7 = document.getElementById('t7').value;
+your_answer_8 = document.getElementById('t8').value;
+your_answer_9 = document.getElementById('t9').value;
+your_answer_10 = document.getElementById('t10').value;
+point = 0;
+if(your_answer_1 == correct_answer_1){
+point +=1;
+}
+if(your_answer_2 == correct_answer_2){
+point +=1;
+}
+if(your_answer_3 == correct_answer_3){
+point +=1;
+}
+if(your_answer_4 == correct_answer_4){
+point +=1;
+}
+if(your_answer_5 == correct_answer_5){
+point +=1;
+}
+if(your_answer_6 == correct_answer_6){
+point +=1;
+}
+if(your_answer_7 == correct_answer_7){
+point +=1;
+}
+if(your_answer_8 == correct_answer_8){
+point +=1;
+}
+if(your_answer_9 == correct_answer_9){
+point +=1;
+}
+if(your_answer_10 == correct_answer_10){
+point +=1;
+}
+number_of_tasks = 10;
+procent = point/number_of_tasks * 100;
+document.getElementById('result').innerHTML = "Задания выполнены верно на "+procent+"%.";
+}
+</script>
+</body>
+</html>
