@@ -21,10 +21,10 @@ input {
 <p>8+8 = <input type="text" id="t8"></p>
 <p>9+9 = <input type="text" id="t9"></p>
 <p>10+10 = <input type="text" id="t10"></p>	
-<button onClick="proverit();">Проверить ответ</button>
+<button onClick="check();">Проверить ответ</button>
 <div id="result"></div>
 <script>
-function proverit(){
+function check(){
 correct_answer_1 = 2; 
 correct_answer_2 = 4;
 correct_answer_3 = 6;
@@ -76,9 +76,9 @@ point +=1;
 if(your_answer_10 == correct_answer_10){
 point +=1;
 }
-vsego_zadach = 10;
-procent_vip = point/vsego_zadach * 100;
-document.getElementById('result').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+number_of_tasks = 10;
+procent = point/number_of_tasks * 100;
+document.getElementById('result').innerHTML = "Задания выполнены верно на "+procent+"%.";
 }
 </script>
 </body>
