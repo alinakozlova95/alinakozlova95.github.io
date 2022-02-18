@@ -13,15 +13,14 @@ input {
 <p>Решите задания и введите свой ответ:</p>
 <p>1+1 = <input type="text" id="t1"></p>
 <p>2+2 = <input type="text" id="t2"></p>
-<p>3+3 =  <input type="text" id="t3"></p>
+<p>3+3 = <input type="text" id="t3"></p>
 <p>4+4 = <input type="text" id="t4"></p>
 <p>5+5 = <input type="text" id="t5"></p>
 <p>6+6 = <input type="text" id="t6"></p>
 <p>7+7 = <input type="text" id="t7"></p>
 <p>8+8 = <input type="text" id="t8"></p>
 <p>9+9 = <input type="text" id="t9"></p>
-<p>Если боковые рёбра призмы перпендикулярны основаниям, то призма называется ... = <input type="text" id="t10"></p>
-<button onClick="proverit();">Проверить</button>
+<button onClick="proverit();">Проверить ответ</button>
 <div id="rezultat"></div>
 <script>
 function proverit(){
@@ -34,7 +33,6 @@ correct_answer_6 = 12;
 correct_answer_7 = 14; 
 correct_answer_8 = 16; 
 correct_answer_9 = 18; 
-correct_answer_10 = прямой; 
 your_answer_1 = document.getElementById('t1').value;
 your_answer_2 = document.getElementById('t2').value;
 your_answer_3 = document.getElementById('t3').value;
@@ -44,7 +42,6 @@ your_answer_6 = document.getElementById('t6').value;
 your_answer_7 = document.getElementById('t7').value;
 your_answer_8 = document.getElementById('t8').value;
 your_answer_9 = document.getElementById('t9').value;
-your_answer_10 = document.getElementById('t10').value;
 point = 0;
 if(your_answer_1 == correct_answer_1){
 point +=1;
@@ -73,10 +70,7 @@ point +=1;
 if(your_answer_9 == correct_answer_9){
 point +=1;
 }
-if(your_answer_10 == correct_answer_10){
-point +=1;
-}
-vsego_zadach = 10;
+vsego_zadach = 9;
 procent_vip = point/vsego_zadach * 100;
 document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
 }
