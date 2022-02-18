@@ -20,8 +20,9 @@ input {
 <p>7+7 = <input type="text" id="t7"></p>
 <p>8+8 = <input type="text" id="t8"></p>
 <p>9+9 = <input type="text" id="t9"></p>
+<p>0+0 = <input type="text" id="t10"></p>	
 <button onClick="proverit();">Проверить ответ</button>
-<div id="rezultat"></div>
+<div id="result"></div>
 <script>
 function proverit(){
 correct_answer_1 = 2; 
@@ -33,6 +34,7 @@ correct_answer_6 = 12;
 correct_answer_7 = 14; 
 correct_answer_8 = 16; 
 correct_answer_9 = 18; 
+correct_answer_10 = 0;	
 your_answer_1 = document.getElementById('t1').value;
 your_answer_2 = document.getElementById('t2').value;
 your_answer_3 = document.getElementById('t3').value;
@@ -42,6 +44,7 @@ your_answer_6 = document.getElementById('t6').value;
 your_answer_7 = document.getElementById('t7').value;
 your_answer_8 = document.getElementById('t8').value;
 your_answer_9 = document.getElementById('t9').value;
+your_answer_10 = document.getElementById('t10').value;
 point = 0;
 if(your_answer_1 == correct_answer_1){
 point +=1;
@@ -70,9 +73,12 @@ point +=1;
 if(your_answer_9 == correct_answer_9){
 point +=1;
 }
-vsego_zadach = 9;
+if(your_answer_10 == correct_answer_10){
+point +=1;
+}
+vsego_zadach = 10;
 procent_vip = point/vsego_zadach * 100;
-document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+document.getElementById('result').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
 }
 </script>
 </body>
