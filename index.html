@@ -1,4 +1,3 @@
-
 <html>
 <head><title>Тест</title>
 <meta charset="utf-8">
