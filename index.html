@@ -1,32 +1,32 @@
 <html>
 <head><title>Тест</title>
 <meta charset="utf-8">
-<link rel="таблица стилей" href="data/css/bootstrap.min.css">
-<script src="data/js/bootstrap.min.js"><script src="data/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="data/data.js"><script type="text/javascript" src="data/data.js"></script>
-<стиль>
-тело {
- дисплей: -ms-flexbox;
- дисплей: -webkit-box;
- дисплей: flex;
- -ms-flex-align: center;
- -ms-flex-pack: центр;
- -webkit-box-align: center;
- выровнять-элементы: по центру;
- -webkit-box-pack: центр;
- обоснуйте-содержание: центр;
- отступы-top: 40px;
- отступ-дно: 40px;
- background-color: #f5f5f5;
+<link rel="stylesheet" href="data/css/bootstrap.min.css">
+<script src="data/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="data/data.js"></script>
+<style>
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
 }
 p, span, input, td {
- размер шрифта:24px;
+ font-size:24px;
 }
-кнопка{
- размер шрифта:18px;
+button{
+    font-size:18px;
 }
 #ot {
- цвет:синий;
+    color:blue;
 }
 </style>
 </head>
@@ -163,93 +163,93 @@ document.addEventListener('DOMContentLoaded', function(){
         vopros_10 = "<img src='data/10.jpg' class='rounded mx-auto d-block'><br>"+vopros_10;
     }
     if(vopros_ris_11 == "да"){
- вопрос_11 = "<img src='data/11.jpg' class='rounded mx-auto d-block'><img src='data/11.jpg' class='rounded mx-auto d-block'><br>"+вопрос_11;
+        vopros_11 = "<img src='data/11.jpg' class='rounded mx-auto d-block'><br>"+vopros_11;
     }
- if(vopros_ris_12 == "да"){
- vopros_12 = "<img src='data/12.jpg' class='rounded mx-auto d-block'><img src='data/12.jpg' class='rounded mx-auto d-block'><br>"+вопрос_12;
+    if(vopros_ris_12 == "да"){
+        vopros_12 = "<img src='data/12.jpg' class='rounded mx-auto d-block'><br>"+vopros_12;
     }
- if(vopros_ris_13 == "да"){
- вопрос_13 = "<img src='data/13.jpg' class='rounded mx-auto d-block'><img src='data/13.jpg' class='rounded mx-auto d-block'><br>"+вопрос_13;
+    if(vopros_ris_13 == "да"){
+        vopros_13 = "<img src='data/13.jpg' class='rounded mx-auto d-block'><br>"+vopros_13;
     }
- if(vopros_ris_14 == "да"){
- вопрос_14 = "<img src='data/14.jpg' class='rounded mx-auto d-block'><img src='data/14.jpg' class='rounded mx-auto d-block'><br>"+вопрос_14;
+    if(vopros_ris_14 == "да"){
+        vopros_14 = "<img src='data/14.jpg' class='rounded mx-auto d-block'><br>"+vopros_14;
     }
- if(vopros_ris_15 == "да"){
- вопрос_15 = "<img src='data/15.jpg' class='rounded mx-auto d-block'><img src='data/15.jpg' class='rounded mx-auto d-block'><br>"+вопрос_15;
+    if(vopros_ris_15 == "да"){
+        vopros_15 = "<img src='data/15.jpg' class='rounded mx-auto d-block'><br>"+vopros_15;
     }
- вопрос = [[vopros_1,pr_otv_zadachi_1],[vopros_2,pr_otv_zadachi_2],[vopros_3,pr_otv_zadachi_3],[vopros_4,pr_otv_zadachi_4],[vopros_5,pr_otv_zadachi_5],[vopros_6,pr_otv_zadachi_6],[vopros_7,pr_otv_zadachi_7],[vopros_8,pr_otv_zadachi_8],[vopros_9,pr_otv_zadachi_9],[vopros_10,pr_otv_zadachi_10],[vopros_11,pr_otv_zadachi_11],[vopros_12,pr_otv_zadachi_12],[vopros_13,pr_otv_zadachi_13],[vopros_14,pr_otv_zadachi_14],[vopros_15,pr_otv_zadachi_15]];
- if(peremeshat_voprosi == "да"){
- voprosi = перемешать_vse_voprosi(вопрос);
+    voprosi = [[vopros_1,pr_otv_zadachi_1],[vopros_2,pr_otv_zadachi_2],[vopros_3,pr_otv_zadachi_3],[vopros_4,pr_otv_zadachi_4],[vopros_5,pr_otv_zadachi_5],[vopros_6,pr_otv_zadachi_6],[vopros_7,pr_otv_zadachi_7],[vopros_8,pr_otv_zadachi_8],[vopros_9,pr_otv_zadachi_9],[vopros_10,pr_otv_zadachi_10],[vopros_11,pr_otv_zadachi_11],[vopros_12,pr_otv_zadachi_12],[vopros_13,pr_otv_zadachi_13],[vopros_14,pr_otv_zadachi_14],[vopros_15,pr_otv_zadachi_15]];
+    if(peremeshat_voprosi == "да"){
+        voprosi = peremeshat_vse_voprosi(voprosi);
     }
- document.getElementById('v_1').innerHTML = voprosi[0][0];
- document.getElementById('v_2').innerHTML = voprosi[1][0];
- document.getElementById('v_3').innerHTML = voprosi[2][0];
- document.getElementById('v_4').innerHTML = voprosi[3][0];
- document.getElementById('v_5').innerHTML = voprosi[4][0];
- document.getElementById('v_6').innerHTML = voprosi[5][0];
- document.getElementById('v_7').innerHTML = voprosi[6][0];
- document.getElementById('v_8').innerHTML = voprosi[7][0];
- document.getElementById('v_9').innerHTML = voprosi[8][0];
- document.getElementById('v_10').innerHTML = voprosi[9][0];
- document.getElementById('v_11').innerHTML = voprosi[10][0];
- document.getElementById('v_12').innerHTML = voprosi[11][0];
- document.getElementById('v_13').innerHTML = voprosi[12][0];
- document.getElementById('v_14').innerHTML = voprosi[13][0];
- document.getElementById('v_15').innerHTML = voprosi[14][0];
- document.getElementById('tema').innerHTML = test;
+    document.getElementById('v_1').innerHTML = voprosi[0][0];
+    document.getElementById('v_2').innerHTML = voprosi[1][0];
+    document.getElementById('v_3').innerHTML = voprosi[2][0];
+    document.getElementById('v_4').innerHTML = voprosi[3][0];
+    document.getElementById('v_5').innerHTML = voprosi[4][0];
+    document.getElementById('v_6').innerHTML = voprosi[5][0];
+    document.getElementById('v_7').innerHTML = voprosi[6][0];
+    document.getElementById('v_8').innerHTML = voprosi[7][0];
+    document.getElementById('v_9').innerHTML = voprosi[8][0];
+    document.getElementById('v_10').innerHTML = voprosi[9][0];
+    document.getElementById('v_11').innerHTML = voprosi[10][0];
+    document.getElementById('v_12').innerHTML = voprosi[11][0];
+    document.getElementById('v_13').innerHTML = voprosi[12][0];
+    document.getElementById('v_14').innerHTML = voprosi[13][0];
+    document.getElementById('v_15').innerHTML = voprosi[14][0];
+    document.getElementById('tema').innerHTML = test;
 });
-функция sled_vopr(){
- if(document.getElementById('vopros14').style.display == "block"){
- document.getElementById('vopros14').style.display = "none";
- document.getElementById('vopros15').style.display = "блок";
- document.getElementById('kn_sl').style.display = "none";
- document.getElementById('kn_pr').style.display = "блок";
+function sled_vopr(){
+    if(document.getElementById('vopros14').style.display == "block"){
+        document.getElementById('vopros14').style.display = "none";
+        document.getElementById('vopros15').style.display = "block";
+        document.getElementById('kn_sl').style.display = "none";
+        document.getElementById('kn_pr').style.display = "block";
     }
- if(document.getElementById('vopros13').style.display == "block"){
- document.getElementById('vopros13').style.display = "none";
- document.getElementById('vopros14').style.display = "блок";
+    if(document.getElementById('vopros13').style.display == "block"){
+        document.getElementById('vopros13').style.display = "none";
+        document.getElementById('vopros14').style.display = "block";
     }
- if(document.getElementById('vopros12').style.display == "block"){
- document.getElementById('vopros12').style.display = "none";
- document.getElementById('vopros13').style.display = "блок";
+    if(document.getElementById('vopros12').style.display == "block"){
+        document.getElementById('vopros12').style.display = "none";
+        document.getElementById('vopros13').style.display = "block";
     }
- if(document.getElementById('vopros11').style.display == "block"){
- document.getElementById('vopros11').style.display = "none";
- document.getElementById('vopros12').style.display = "блок";
+    if(document.getElementById('vopros11').style.display == "block"){
+        document.getElementById('vopros11').style.display = "none";
+        document.getElementById('vopros12').style.display = "block";
     }
- if(document.getElementById('vopros10').style.display == "block"){
- document.getElementById('vopros10').style.display = "none";
- document.getElementById('vopros11').style.display = "блок";
+    if(document.getElementById('vopros10').style.display == "block"){
+        document.getElementById('vopros10').style.display = "none";
+        document.getElementById('vopros11').style.display = "block";
     }
- if(document.getElementById('vopros9').style.display == "block"){
- document.getElementById('vopros9').style.display = "none";
- document.getElementById('vopros10').style.display = "блок";
+    if(document.getElementById('vopros9').style.display == "block"){
+        document.getElementById('vopros9').style.display = "none";
+        document.getElementById('vopros10').style.display = "block";
     }
- if(document.getElementById('vopros8').style.display == "block"){
- document.getElementById('vopros8').style.display = "none";
- document.getElementById('vopros9').style.display = "блок";
+    if(document.getElementById('vopros8').style.display == "block"){
+        document.getElementById('vopros8').style.display = "none";
+        document.getElementById('vopros9').style.display = "block";
     }
- if(document.getElementById('vopros7').style.display == "block"){
- document.getElementById('vopros7').style.display = "none";
- document.getElementById('vopros8').style.display = "блок";
+    if(document.getElementById('vopros7').style.display == "block"){
+        document.getElementById('vopros7').style.display = "none";
+        document.getElementById('vopros8').style.display = "block";
     }
- if(document.getElementById('vopros6').style.display == "block"){
- document.getElementById('vopros6').style.display = "none";
- document.getElementById('vopros7').style.display = "блок";
+    if(document.getElementById('vopros6').style.display == "block"){
+        document.getElementById('vopros6').style.display = "none";
+        document.getElementById('vopros7').style.display = "block";
     }
- if(document.getElementById('vopros5').style.display == "block"){
- document.getElementById('vopros5').style.display = "none";
- document.getElementById('vopros6').style.display = "блок";
+    if(document.getElementById('vopros5').style.display == "block"){
+        document.getElementById('vopros5').style.display = "none";
+        document.getElementById('vopros6').style.display = "block";
     }
- if(document.getElementById('vopros4').style.display == "block"){
- document.getElementById('vopros4').style.display = "none";
- document.getElementById('vopros5').style.display = "блок";
+    if(document.getElementById('vopros4').style.display == "block"){
+        document.getElementById('vopros4').style.display = "none";
+        document.getElementById('vopros5').style.display = "block";
     }
- if(document.getElementById('vopros3').style.display == "block"){
- document.getElementById('vopros3').style.display = "none";
- document.getElementById('vopros4').style.display = "блок";
+    if(document.getElementById('vopros3').style.display == "block"){
+        document.getElementById('vopros3').style.display = "none";
+        document.getElementById('vopros4').style.display = "block";
     }
- if(document.getElementById('vopros2').style.display == "block"){
+    if(document.getElementById('vopros2').style.display == "block"){
         document.getElementById('vopros2').style.display = "none";
         document.getElementById('vopros3').style.display = "block";
     }
@@ -282,54 +282,54 @@ otv_ucgenika_7 = otv_uch_7;
 otv_uch_7 = kodirov(otv_uch_7);
 otv_uch_8 = document.getElementById('z_8').value;
 otv_ucgenika_8 = otv_uch_8;
-otv_uch_8 = кодиров(otv_uch_8);
+otv_uch_8 = kodirov(otv_uch_8);
 otv_uch_9 = document.getElementById('z_9').value;
 otv_ucgenika_9 = otv_uch_9;
-otv_uch_9 = кодиров(otv_uch_9);
+otv_uch_9 = kodirov(otv_uch_9);
 otv_uch_10 = document.getElementById('z_10').value;
 otv_ucgenika_10 = otv_uch_10;
-otv_uch_10 = кодиров(otv_uch_10);
+otv_uch_10 = kodirov(otv_uch_10);
 otv_uch_11 = document.getElementById('z_11').value;
 otv_ucgenika_11 = otv_uch_11;
-otv_uch_11 = кодиров(otv_uch_11);
+otv_uch_11 = kodirov(otv_uch_11);
 otv_uch_12 = document.getElementById('z_12').value;
 otv_ucgenika_12 = otv_uch_12;
-otv_uch_12 = кодиров(otv_uch_12);
+otv_uch_12 = kodirov(otv_uch_12);
 otv_uch_13 = document.getElementById('z_13').value;
 otv_ucgenika_13 = otv_uch_13;
-otv_uch_13 = кодиров(otv_uch_13);
+otv_uch_13 = kodirov(otv_uch_13);
 otv_uch_14 = document.getElementById('z_14').value;
 otv_ucgenika_14 = otv_uch_14;
-otv_uch_14 = кодиров(otv_uch_14);
+otv_uch_14 = kodirov(otv_uch_14);
 otv_uch_15 = document.getElementById('z_15').value;
 otv_ucgenika_15 = otv_uch_15;
-otv_uch_15 = кодиров(otv_uch_15);
-мяч = 0;
+otv_uch_15 = kodirov(otv_uch_15);
+ball = 0;
 document.getElementById('vopros15').style.display = "none";
 document.getElementById('kn_pr').style.display = "none";
 document.getElementById('name_test').style.display = "none";
 otveti = "<table class='table'><tr class='table-active'><td>№</td><td>Вопрос</td><td>Ответ</td></tr>";
 if(otv_uch_1 == voprosi[0][1]){
- мяч +=1;
- otveti += "<tr class='table-success'><td>1</td><td>"+voprosi[0][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_1+"</td></tr>";
+    ball +=1;
+    otveti += "<tr class='table-success'><td>1</td><td>"+voprosi[0][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_1+"</td></tr>";
 } else {
- otveti += "<tr class='table-danger'><td>1</td><td>"+voprosi[0][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_1+"</td></tr>"; 
+    otveti += "<tr class='table-danger'><td>1</td><td>"+voprosi[0][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_1+"</td></tr>"; 
 }
 if(otv_uch_2 == voprosi[1][1]){
- мяч +=1;
- otveti += "<tr class='table-success'><td>2</td><td>"+voprosi[1][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_2+"</td></tr>";
+    ball +=1;
+    otveti += "<tr class='table-success'><td>2</td><td>"+voprosi[1][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_2+"</td></tr>";
 } else {
- otveti += "<tr class='table-danger'><td>2</td><td>"+voprosi[1][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_2+"</td></tr>"; 
+   otveti += "<tr class='table-danger'><td>2</td><td>"+voprosi[1][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_2+"</td></tr>";  
 }
 if(otv_uch_3 == voprosi[2][1]){
- мяч +=1;
- otveti += "<tr class='table-success'><td>3</td><td>"+voprosi[2][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_3+"</td></tr>";
+    ball +=1;
+    otveti += "<tr class='table-success'><td>3</td><td>"+voprosi[2][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_3+"</td></tr>";
 } else {
- otveti += "<tr class='table-danger'><td>3</td><td>"+voprosi[2][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_3+"</td></tr>"; 
+    otveti += "<tr class='table-danger'><td>3</td><td>"+voprosi[2][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_3+"</td></tr>"; 
 }
 if(otv_uch_4 == voprosi[3][1]){
- мяч +=1;
- otveti += "<tr class='table-success'><td>4</td><td>"+voprosi[3][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_4+"</td></tr>";
+    ball +=1;
+    otveti += "<tr class='table-success'><td>4</td><td>"+voprosi[3][0]+"</td><td>Вы ответили верно. Ваш ответ: "+otv_ucgenika_4+"</td></tr>";
 } else {
     otveti += "<tr class='table-danger'><td>4</td><td>"+voprosi[3][0]+"</td><td>Вы ответили не верно. Ваш ответ: "+otv_ucgenika_4+"</td></tr>"; 
 }
@@ -436,3 +436,4 @@ function peremeshat_vse_voprosi(m_vopros) {
 </script>
 </body>
 </html>
+
